@@ -60,8 +60,11 @@ HTML
           :showMarker      => @args[:attributes][:show_marker] != "false",
           :showMarkerPopup => @args[:attributes][:show_popup] != "false"
         }
+        print @args
         if @args[:attributes][:zoom]
           opts[:customZoom] = @args[:attributes][:zoom].to_i
+          print "zoom!"
+          print opts[:customZoom]
         end
         opts
       end
